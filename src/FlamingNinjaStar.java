@@ -15,6 +15,7 @@ public class FlamingNinjaStar {
 
 		// 1. Make a new robot, and set it's pen down.
 		Robot r2d2 = new Robot();
+		r2d2.hide();
 		r2d2.penDown();
 		r2d2.setSpeed(10);
 		// *14. Use the methods setX and setY to move the ninja star into the

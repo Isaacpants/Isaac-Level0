@@ -1,49 +1,30 @@
-/*** Teacher's note ***/
-/*
- * Before beginning recipe: 1. ask students to find and explain the variables in
- * this recipe. 2. ask students what robot commands they think they will use to
- * make picture in the laminated hand-outs: http://bit.ly/ninja-star
- */
 
+// Copyright The League of Amazing Programmers 2014
+import javax.swing.JOptionPane;
+
+/*
+ * I have a pocket full of change. I hate doing math. Make me a program that
+ * will calculate how much money I have without me having to use my brain. Then
+ * make me a sandwich.
+ */
 public class Calculator {
+
 	public static void main(String[] args) {
 
-		int baseSize = 300; // the size of the black part of the star
-		int flameSize = 200; // the length of the flaming arms
-
-		// 1. Make a new robot, and set it's pen down.
-
-		// *14. Use the methods setX and setY to move the ninja star into the
-		// center of the screen
-
-		// *15. Make some adjustments to see what other kinds of shapes you can
-		// make.
-
-		// 12. Set the robot speed to 10
-
-		// 13. Make all the code below repeat 25 times
-
-		// 2. Turn the robot 1/8 of a circle
-
-		// 3. Move the robot 64 pixels
-
-		// 4. Turn the robot 40 degrees to the LEFT. (Negative numbers will turn
-		// the robot counter-clockwise.)
-
-		// 5. Move the robot the distance in the variable flameSize
-
-		// 6. Turn the robot 170 degrees
-
-		// 7. Move the robot the distance in the variable flameSize (again)
-
-		// 8. Turn the robot 64 degrees to the right
-
-		// 9. Move the robot the distance in the variable baseSize
-
-		// 10. Check that your shape is the same as Figure 1. This is one arm of
-		// the ninja star.
-		// 11. Color your ninja star like Figure 2.
-
+		// Ask the user how many nickels they have
+		String nickels = JOptionPane.showInputDialog("How many nickels do you have");
+		// Convert their answer to an int using Integer.parseInt()
+		int numNickels = Integer.parseInt(nickels);
+		// Ask the user how many dimes they have, and convert their answer
+		String dimes = JOptionPane.showInputDialog("How many dimes do you have");
+		int numDimes = Integer.parseInt(dimes);
+		// Ask the user how many quarters they have, and convert their answer
+		String quarters = JOptionPane.showInputDialog("How many quarters do you have");
+		int numQuarters = Integer.parseInt(quarters);
+		// Calculate how much money the user has and save it in a double
+		// variable
+		double money = (numNickels * .05) + (numDimes * .1) + (numQuarters * .25);
+		// Tell the user how much money they have
+		System.out.println("you have" + money);
 	}
-
 }
