@@ -28,7 +28,7 @@ public class StarShow {
 		for (int i = 0; i < 30; i++) {
 
 			// 19. Set the pen width to i
-
+r2d2.setPenWidth(i);
 			// 10. Set the X position of the robot to your X variable
 			r2d2.setX(x);
 			// 11. Set the Y position of the robot to your Y variable
@@ -38,12 +38,13 @@ public class StarShow {
 			// 14. Increase the X position by star size. See Figure 2.
 			x = x + size;
 			// 15. decrease the Y position by star size. See Figure 3.
-			y = y + size;
-			// 16. Increase the star size by 20
-
+			y = y - size;
+			// 16. Increase the star size by 2
+	size = size + 20;
 			// 17. Turn the robot 12 degrees
-
+r2d2.turn(12);
 			// 18. Make each star a different random color like in Figure 4.
+r2d2.setRandomPenColor();
 		}
 	}
 
