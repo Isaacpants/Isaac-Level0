@@ -1,6 +1,7 @@
 /AirLineRegistration.class
 /AnimalFarm.class
 /AreYouHappy.class
+/Badger.class
 /Calculator.class
 /CrazyCatLady.class
 /FizzBuzz.class
@@ -12,6 +13,7 @@
 /KnockKnock.class
 /L99BottlesOfBeerOnTheWall.class
 /MorningZombie.class
+/MyAges.class
 /OddlyLoopy.class
 /PiAloud.class
 /RUHappy.class
@@ -25,5 +27,4 @@
 /TestScores.class
 /YearsAlive.class
 /zork.class
-/MyAges.class
-/Badger.class
+/CheckPoint.class
